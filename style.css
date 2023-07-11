@@ -44,7 +44,7 @@ header {
   overflow: hidden;
 }
 
-picture {
+.cta-bg {
   position: absolute;
   top: 230px;
   left: 140px;
@@ -230,7 +230,7 @@ nav {
   transform: translateX(-50%);
 }
 
-.cta-btn{
+.cta-btn {
   width: 150px;
   height: 50px;
   border: 0;
@@ -249,4 +249,93 @@ nav {
   color: var(--white);
   border: 1px solid var(--white);
   background-color: transparent;
+}
+
+/* features section */
+#features-container {
+  text-align: center;
+  margin: 80px auto 0;
+  font-family: var(--font-1);
+  color: var(--very-dark-blue);
+}
+
+#features-container h2 {
+  font-size: 1.7rem;
+}
+
+.feature {
+  /* min-width: 100vw; */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 60px 0;
+}
+
+.feature > picture {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.feature h3 {
+  font-size: 35px;
+  font-family: var(--font-1);
+  margin-bottom: 20px;
+}
+
+.feature p {
+  color: var(--very-dark-grayish-blue);
+  width: 90%;
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 25px;
+}
+
+.infrastructure{
+  position: relative;
+  height: 800px;
+  padding-top: 100px
+}
+
+#circles-bg {
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  border-radius: 0 100px;
+  background: var(--body-background);
+}
+
+#circles-bg > img {
+  position: inherit;
+  top: -400px;
+  left: -330px;
+  scale: 0.6;
+}
+
+#phones-svg{
+  position: absolute;
+  top: 10px;
+  width: 100%;
+}
+
+.infrastructure > div:last-child{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  margin-top: 250px;
+}
+
+.infrastructure > div:last-child h3{
+  color: var(--white);
+}
+
+.infrastructure > div:last-child p{
+  color: var(--grayish-blue);
 }
